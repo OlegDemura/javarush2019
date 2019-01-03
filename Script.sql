@@ -1,0 +1,53 @@
+USE test;
+DROP TABLE IF EXISTS part;
+CREATE TABLE part (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  deviceTitle VARCHAR(255) NOT NULL,
+  deviceName VARCHAR(255) NOT NULL,
+  nessesery BOOLEAN NOT NULL,
+  amount INT(5) NULL,
+  PRIMARY KEY (id))
+ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
+
+INSERT INTO part(id, deviceTitle, deviceName, nessesery, amount) VALUES
+('1','Intel Core i3','процессор',true,5),
+('2','Intel Core i5','процессор',true,7),
+('3','Intel Core i7','процессор',true,4),
+('4','Gigabyte GA-F2A68HM-DS2','материнская плата',true,4),
+('5','ASRock FM2A68M-DG3+','материнская плата',true,3),
+('6','MSI A68HM-P33 V2','материнская плата',true,3),
+('7','ASUS H110M-K','материнская плата',true,4),
+('8','Creative SB AUDIGY FX 5.1','звуковая карта',false,4),
+('9','ASUS Xonar DSX','звуковая карта',false,3),
+('10','C-Media 8738LX','звуковая карта',false,8),
+('11','Creative SB AUDIGY RX 7.1','звуковая карта',false,1),
+('12','Deepcool RGB 100 Plus','подсветка корпуса',false,3),
+('13','Thermaltake Lumi Color LED Strip','подсветка корпуса',false,4),
+('14','CoolerMaster RGB LED Strip','подсветка корпуса',false,4),
+('15','Deepcool RGB 350','подсветка корпуса',false,2),
+('16','Deepcool RGB 380','подсветка корпуса',false,7),
+('17','Seagate BarraCuda ST500DM009','HDD диск',false,4),
+('18','Toshiba P300 HDWD105EZSTA','HDD диск',false,3),
+('19','WD Blue WD5000AZLX','HDD диск',false,5),
+('20','Seagate 7200 BarraCuda ST1000DM010','HDD диск',false,4),
+('21','WD Blue WD10EZEX','HDD диск',false,7),
+('22','DEXP DC-Slim','корпус',true,4),
+('23','DEXP DC-101B','корпус',true,3),
+('24','AeroCool SI-5100 Window','корпус',true,4),
+('25','Accord ACC-B305','корпус',true,8),
+('26','CaseCom CIN-939','корпус',true,7),
+('27','Kingston ValueRAM KVM16N11S6/2','память',true,1),
+('28','JRam JRL4G1333D3','память',true,1),
+('29','Trancend TS256MLK64V3N','память',true,1),
+('30','AMDRadeon R3 Value Series R334G1339U1S-U','память',true,1),
+('31','Goodram GR1600D3V64L11/4G','память',true,1),
+('32','Trancend 230S TS512GSSD230S','SSD диск',true,1),
+('33','ADATA SU800 ASU800SS-512GT-C','SSD диск',true,1),
+('34','Leven JS600 JS600SSD512 GB','SSD диск',true,1),
+('35','Intel 545s SSDSC2KW512G8X1','SSD диск',true,1),
+('36','Crucial Micron 1100 MTFDDAK512TBN-1AR1ZABY','SSD диск',true,1),
+('37','ASUS GeForce GT 710 Silent LP','видеокарта',false,1),
+('38','ASUS AMD Radeon R7 240 LP','видеокарта',false,1),
+('39','MSI GeForce GT 730','видеокарта',false,1),
+('40','ASUS AMD Radeon RX 560 AREZ OC','видеокарта',false,1)
+;
